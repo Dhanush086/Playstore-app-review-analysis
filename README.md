@@ -15,6 +15,7 @@ Help app developers and product teams make data-driven decisions on:
 ## Dataset
 - **Play Store Data** — 10,841 rows, 13 columns (category, rating, installs, price, size, content rating, etc.)
 - **User Reviews** — 64,295 rows, 5 columns (review text, sentiment, polarity, subjectivity)
+- Source: [Google Play Store Apps — Kaggle](https://www.kaggle.com/datasets/lava18/google-play-store-apps)
 
 ## Data Cleaning
 - Removed a corrupted row (scraping error, shifted columns)
@@ -27,6 +28,18 @@ Help app developers and product teams make data-driven decisions on:
 ## Methodology
 Followed the **UBM framework** — Univariate, Bivariate, and Multivariate analysis — producing **20 charts**, each with a structured insight: why the chart was chosen, what it revealed, and its business impact (positive or negative).
 
+## Sample Visualizations
+
+### Correlation Heatmap
+![Correlation Heatmap](correlation_heatmap.png)
+
+Rating shows near-zero correlation with Reviews, Installs, Price, or Size — only Reviews and Installs show a meaningful relationship (0.625), meaning none of these structural factors reliably predict app quality.
+
+### Installs vs Rating by Type
+![Installs by Type](installs_by_type.png)
+
+Paid apps cluster almost entirely in lower install ranges, while Free apps span the entire range — including the billion-install tier. Mass-scale adoption is achievable only through a Free pricing model.
+
 ## Key Findings
 - Pricing model has almost no effect on ratings or sentiment, but only Free apps reach mass-scale adoption (100M+ installs)
 - SOCIAL category has few apps but massive average installs, skewed by a handful of giants (Facebook, Instagram, WhatsApp)
@@ -36,6 +49,17 @@ Followed the **UBM framework** — Univariate, Bivariate, and Multivariate analy
 
 ## Tools
 Python, Pandas, NumPy, Matplotlib, Seaborn — in Google Colab
+
+## How to Run
+1. Download the dataset from Kaggle: [Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps)
+   - You'll need `googleplaystore.csv` (Play Store Data) and `googleplaystore_user_reviews.csv` (User Reviews)
+2. Clone this repo and install dependencies:
+3. Place the CSV files in the same directory as the notebook (or update the file paths in the first cell)
+4. Open `Playstore_EDA.ipynb` in Jupyter or Google Colab and run all cells
+
+**Environment:** Python 3.10+, tested in Google Colab
+
+
 
 ## Author
 Dhanush
