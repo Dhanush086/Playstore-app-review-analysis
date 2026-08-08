@@ -55,7 +55,7 @@ Python, Pandas, NumPy, Matplotlib, Seaborn — in Google Colab
    - You'll need `googleplaystore.csv` (Play Store Data) and `googleplaystore_user_reviews.csv` (User Reviews)
 2. Clone this repo and install dependencies:
 3. Place the CSV files in the same directory as the notebook (or update the file paths in the first cell)
-4. Open `Playstore_EDA.ipynb` in Jupyter or Google Colab and run all cells
+4. Open `PlayStore_App_Review_AnalysisEDA_project.ipynb` in Jupyter or Google Colab and run all cells
 
 **Environment:** Python 3.10+, tested in Google Colab
 
