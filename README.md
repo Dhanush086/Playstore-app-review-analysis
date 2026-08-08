@@ -53,7 +53,7 @@ Python, Pandas, NumPy, Matplotlib, Seaborn — in Google Colab
 ## How to Run
 1. Download the dataset from Kaggle: [Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps)
    - You'll need `googleplaystore.csv` (Play Store Data) and `googleplaystore_user_reviews.csv` (User Reviews)
-2. 2. Clone this repo and install dependencies:
+2. Clone this repo and install dependencies:
 ```bash
    git clone https://github.com/Dhanush086/Playstore-app-review-analysis.git
    cd Playstore-app-review-analysis
